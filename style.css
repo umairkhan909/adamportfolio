@@ -106,7 +106,7 @@ body {
 .social-icons {
     display: flex;
     gap: 12px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .social-icons i {
