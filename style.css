@@ -1,9 +1,12 @@
-/* Google Font (Poppins) aur default reset poori website ke liye */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
+}
+
+body, h1, h2, h3, p, a, strong, span, b {
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -107,7 +110,7 @@ body {
 }
 
 .social-icons i {
-    width: 32px; 
+    width: 32px;
     height: 32px;
     display: flex;
     justify-content: center;
@@ -119,6 +122,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
 }
+
 .social-icons i:hover {
     background: #e5b63b;
     color: #3b3948;
@@ -182,7 +186,7 @@ body {
     align-items: center;
     padding: 0 35px;
     gap: 20px;
-    border-radius: 6px; /* Smooth corners */
+    border-radius: 6px;
 }
 
 .clients div {
@@ -211,7 +215,6 @@ body {
     padding: 65px 0;
 }
 
-/* LEFT */
 .work-info h2 {
     font-size: 28px;
     line-height: 1.25;
@@ -286,134 +289,39 @@ body {
     color: #e6b63c;
     font-size: 12px;
 }
-
-.social-icons i, .nav-icons i, .project i {
+.fa, .fas, .far, .fab, .fa-brands, .fa-solid {
     font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif !important;
     font-weight: 900 !important;
 }
 
 /* RESPONSIVE DESIGN (MOBILE & TABLET) */
 @media (max-width: 900px) {
-    .container {
-        padding: 0 30px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .hero-image {
-        grid-column: 2;
-        grid-row: 1 / 3;
-    }
-
-    .services {
-        grid-column: 1;
-        grid-row: 2;
-        padding-left: 0;
-        padding-bottom: 30px;
-    }
-
-    .work {
-        gap: 30px;
-    }
+    .container { padding: 0 30px; }
+    .hero { grid-template-columns: 1fr 1fr; }
+    .hero-image { grid-column: 2; grid-row: 1 / 3; }
+    .services { grid-column: 1; grid-row: 2; padding-left: 0; padding-bottom: 30px; }
+    .work { gap: 30px; }
 }
 
 @media (max-width: 600px) {
-    .container {
-        padding: 0 18px;
-    }
-
-    .navbar {
-        height: 65px;
-    }
-
-    .navbar nav {
-        display: none;
-    }
-
-    .nav-icons {
-        gap: 15px;
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        min-height: auto;
-    }
-
-    .hero-text {
-        width: 100%;
-        padding-top: 30px;
-    }
-
-    .small-title {
-        font-size: 24px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
-    .description {
-        max-width: 100%;
-    }
-
-    .hero-image {
-        width: 100%;
-        height: 350px;
-        order: 2;
-        margin-top: 10px;
-    }
-
-    .hero-image::before {
-        width: 280px;
-        height: 280px;
-    }
-
-    .hero-image img {
-        width: 280px;
-        max-height: 340px;
-    }
-
-    .services {
-        width: 100%;
-        order: 3;
-        padding: 10px 0 30px;
-    }
-
-    .services h3 {
-        max-width: 100%;
-    }
-
-    .clients {
-        grid-template-columns: 1fr 1fr;
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .clients div {
-        height: 45px;
-    }
-
-    .work {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        padding: 45px 0;
-    }
-
-    .work-info h2 {
-        font-size: 25px;
-    }
-
-    .work-info > p {
-        max-width: 100%;
-    }
-
-    .project img {
-        width: 75px;
-        height: 50px;
-    }
+    .container { padding: 0 18px; }
+    .navbar { height: 65px; }
+    .navbar nav { display: none; }
+    .nav-icons { gap: 15px; }
+    .hero { display: flex; flex-direction: column; text-align: left; min-height: auto; }
+    .hero-text { width: 100%; padding-top: 30px; }
+    .small-title { font-size: 24px; }
+    .hero h1 { font-size: 38px; }
+    .description { max-width: 100%; }
+    .hero-image { width: 100%; height: 350px; order: 2; margin-top: 10px; }
+    .hero-image::before { width: 280px; height: 280px; }
+    .hero-image img { width: 280px; max-height: 340px; }
+    .services { width: 100%; order: 3; padding: 10px 0 30px; }
+    .services h3 { max-width: 100%; }
+    .clients { grid-template-columns: 1fr 1fr; padding: 15px; gap: 10px; }
+    .clients div { height: 45px; }
+    .work { display: flex; flex-direction: column; gap: 40px; padding: 45px 0; }
+    .work-info h2 { font-size: 25px; }
+    .work-info > p { max-width: 100%; }
+    .project img { width: 75px; height: 50px; }
 }
