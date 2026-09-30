@@ -102,16 +102,52 @@ body {
     line-height: 1.7;
 }
 
+/* Services section layout fixes */
+.services {
+    align-self: center;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services p {
+    color: #aaa8b5;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.services h3 {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.services a {
+    color: #e7b63b;
+    text-decoration: none;
+    font-size: 11px;
+    margin-bottom: 25px; /* Button ke neeche icons ke liye sahi jagah banana */
+}
+
+/* Social icons wrap container */
 .social-icons {
     display: flex;
     gap: 12px;
-    margin-top: 20px;
 }
 
+/* Pure page par Font Awesome ke icons ko force karne ka rule */
+i, .fa-brands, .fa-solid {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif !important;
+    font-weight: 900 !important;
+    font-style: normal;
+}
+
+/* Circle styling for social icons */
 .social-icons i {
     width: 32px;
     height: 32px;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -151,30 +187,6 @@ body {
     object-fit: contain;
     position: relative;
     z-index: 1;
-}
-
-.services {
-    align-self: center;
-    padding-left: 20px;
-}
-
-.services p {
-    color: #aaa8b5;
-    font-size: 11px;
-    margin-bottom: 10px;
-}
-
-.services h3 {
-    font-size: 14px;
-    line-height: 1.5;
-    max-width: 200px;
-    margin-bottom: 15px;
-}
-
-.services a {
-    color: #e7b63b;
-    text-decoration: none;
-    font-size: 11px;
 }
 
 .clients {
